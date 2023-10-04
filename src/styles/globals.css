@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #5F6D7E;
+    text-underline-offset: 4px;
+}
+
+.fullscreen {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.card {
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 400px;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.normal-text {
+    font-size: 13px;
+    font-weight: 400;
+    color: #5B5B5B;
+}
+.required-text {
+    color: #fff;
+    background: #CA021A;
+    padding: 2px 7px;
+    border-radius: 4px;
+}
+.menu-item {
+    min-width: 82px;
+    padding: 10px;
+    cursor: pointer;
+}
+.menu-item:hover {
+    background-color: #e5e5e5e5;
+    border-radius: 4px;
+}
+.init-meeting {
+    border-radius: 15px;
+    cursor: pointer;
+}
+button {
+    background: #2E3646;
+    color: white;
+    border: none;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 9px 38px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:hover {
+    background: #000;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.loading {
+    font-weight: bold;
+    display:inline-block;
+    font-family: monospace;
+    font-size: 30px;
+    clip-path: inset(0 3ch 0 0);
+    animation: l 1s steps(4) infinite;
+}
+
+@keyframes l {
+    to {
+        clip-path: inset(0 -1ch 0 0)
+    }
+}
